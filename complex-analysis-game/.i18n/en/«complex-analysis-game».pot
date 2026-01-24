@@ -1,0 +1,85 @@
+msgid ""
+msgstr "Project-Id-Version: «complex-analysis-game» v4.23.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-01-24\n"
+"Last-Translator: \n"
+"Language-Team: none\n"
+"Language: en\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit"
+
+#: GameServer.RpcHandlers
+msgid "level completed with warnings… 🎭"
+msgstr ""
+
+#: GameServer.RpcHandlers
+msgid "level completed! 🎉"
+msgstr ""
+
+#. §0: $\\mathbb{C}$
+#. §1: $(x, y)$
+#: Game.Levels.ComplexNumbers
+msgid "In this world, we will explore the basic properties of complex numbers.\n"
+"We define the set of complex numbers §0 as pairs of real numbers §1."
+msgstr ""
+
+#: Game.Levels.ComplexNumbers
+msgid "Complex Numbers"
+msgstr ""
+
+#. §0: $ \\mathbb{C} $
+#: Game
+msgid "# Welcome to Complex Analysis\n"
+"\n"
+"This game will guide you through the foundations of Complex Analysis, based on the text by Howell & Mathews.\n"
+"\n"
+"You will learn about:\n"
+"- The structure of Complex Numbers (§0)\n"
+"- Geometric Interpretation\n"
+"- Analytic Functions\n"
+"- Integration"
+msgstr ""
+
+#: GameServer.RpcHandlers
+msgid "intermediate goal solved! 🎉"
+msgstr ""
+
+#: Game
+msgid "Complex Analysis Game"
+msgstr ""
+
+#. §0: $z$
+#. §1: $z + \\bar{z} = 2 \\cdot \\text{Re}(z)$
+#: Game.Levels.ComplexNumbers.L01_Basics
+msgid "Prove that for any complex number §0, §1."
+msgstr ""
+
+#: Game
+msgid "Content adapted from 'Complex Analysis' by Howell & Mathews."
+msgstr ""
+
+#: Game.Levels.ComplexNumbers.L01_Basics
+msgid "Great job! You've verified a fundamental property of complex conjugates."
+msgstr ""
+
+#: Game.Levels.ComplexNumbers.L01_Basics
+msgid "Real and Imaginary Parts"
+msgstr ""
+
+#. §0: $z$
+#. §1: $x + iy$
+#. §2: $x$
+#. §3: $y$
+#. §4: $x$
+#. §5: $\\text{Re}(z)$
+#. §6: $y$
+#. §7: $\\text{Im}(z)$
+#. §8: `Complex`
+#. §9: `re`
+#. §10: `im`
+#: Game.Levels.ComplexNumbers.L01_Basics
+msgid "Every complex number §0 can be written as §1, where §2 and §3 are real numbers.\n"
+"§4 is called the real part, denoted §5, and §6 is the imaginary part, denoted §7.\n"
+"\n"
+"In Lean, §8 is defined as a structure with two fields: §9 and §10."
+msgstr ""
