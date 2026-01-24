@@ -13,10 +13,11 @@ Built with [Lean 4](https://leanprover.github.io/) and the [Lean 4 Game Project]
     - [ ] The Complex Plane (Geometry)
     - [ ] Analytic Functions
     - [ ] Integration
-- [ ] **Web Deployment**: Deploy to GitHub Pages for easy student access (The game runs entirely in the browser!).
-- [ ] **Interactive Features**:
-    - [ ] **Multiple Choice Quizzes**: Develop custom `ProofWidgets` to allow students to answer conceptual questions before proving theorems.
-    - [ ] **Visualizations**: interactive graphs of the complex plane.
+- [x] **Interactive Features**:
+    - [x] **Multiple Choice Quizzes**: Custom `ComplexQuiz` tactic/widget for conceptual testing.
+    - [x] **Loogle Integration**: AI-powered theorem search directly in the VS Code environment.
+- [x] **Web Deployment**: Configured for the official [Lean Game Server](https://adam.math.hhu.de).
+
 
 ## 🛠️ Local Development
 
