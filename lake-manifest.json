@@ -111,5 +111,5 @@
    "inputRev": "v4.23.0",
    "inherited": true,
    "configFile": "lakefile.lean"}],
- "name": "«complex-analysis-game»",
+ "name": "Game",
  "lakeDir": ".lake"}

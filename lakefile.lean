@@ -4,7 +4,7 @@ open Lake DSL
 -- Use the Lean version (e.g. v4.23.0) to pin dependencies
 def leanVersion : String := s!"v{Lean.versionString}"
 
-package «complex-analysis-game» where
+package Game where
   leanOptions := #[
     ⟨`linter.all, false⟩,
     ⟨`pp.showLetValues, true⟩,
@@ -19,3 +19,4 @@ require mathlib from git "https://github.com/leanprover-community/mathlib4.git" 
 
 @[default_target]
 lean_lib Game where
+
