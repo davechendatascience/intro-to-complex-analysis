@@ -6,7 +6,7 @@ import Game.Widgets.Quiz
 import ProofWidgets.Component.HtmlDisplay
 
 World "ComplexNumbers"
-Level 1
+Level Basics
 Title "Real and Imaginary Parts"
 
 Introduction "

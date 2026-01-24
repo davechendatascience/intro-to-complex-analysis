@@ -6,7 +6,7 @@ import Game.Widgets.Quiz
 import ProofWidgets.Component.HtmlDisplay
 
 World "ComplexNumbers"
-Level Modulus
+Level ArithModulus
 Title "Arithmetic and Modulus"
 
 open Complex ComplexConjugate
