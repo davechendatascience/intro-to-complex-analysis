@@ -1,0 +1,140 @@
+msgid ""
+msgstr "Project-Id-Version: Game v4.23.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-01-25\n"
+"Last-Translator: \n"
+"Language-Team: none\n"
+"Language: en\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit"
+
+#: GameServer.RpcHandlers
+msgid "level completed with warnings… 🎭"
+msgstr ""
+
+#: GameServer.RpcHandlers
+msgid "level completed! 🎉"
+msgstr ""
+
+#. §0: `apply`
+#: Game.Levels.ComplexNumbers.L01_Basics
+msgid "§0 matches the goal against the conclusion of a theorem."
+msgstr ""
+
+#: Game.Levels.ComplexNumbers.L01_Basics
+msgid "The real part of a real number is itself."
+msgstr ""
+
+#. §0: `simp`
+#: Game.Levels.ComplexNumbers.L01_Basics
+msgid "§0 is a powerful tactic that simplifies goals using theorems."
+msgstr ""
+
+#. §0: `ring`
+#. §1: `a + b = b + a`
+#: Game.Levels.ComplexNumbers.L01_Basics
+msgid "§0 solves goals that follow from the axioms of a ring (like §1)."
+msgstr ""
+
+#: Game.Levels.ComplexNumbers.L01_Basics
+msgid "The imaginary part of a sum is the sum of imaginary parts."
+msgstr ""
+
+#: GameServer.RpcHandlers
+msgid "intermediate goal solved! 🎉"
+msgstr ""
+
+#: Game
+msgid "Content adapted from 'Complex Analysis' by Howell & Mathews."
+msgstr ""
+
+#: Game.Levels.ComplexNumbers.L01_Basics
+msgid "Great job! You've verified a fundamental property of complex conjugates."
+msgstr ""
+
+#. §0: $z$
+#. §1: $x + iy$
+#. §2: $x$
+#. §3: $y$
+#. §4: $x$
+#. §5: $\\text{Re}(z)$
+#. §6: $y$
+#. §7: $\\text{Im}(z)$
+#. §8: `Complex`
+#. §9: `re`
+#. §10: `im`
+#: Game.Levels.ComplexNumbers.L01_Basics
+msgid "Every complex number §0 can be written as §1, where §2 and §3 are real numbers.\n"
+"§4 is called the real part, denoted §5, and §6 is the imaginary part, denoted §7.\n"
+"\n"
+"In Lean, §8 is defined as a structure with two fields: §9 and §10."
+msgstr ""
+
+#. §0: $\\mathbb{C}$
+#. §1: $(x, y)$
+#: Game.Levels.ComplexNumbers
+msgid "In this world, we will explore the basic properties of complex numbers.\n"
+"We define the set of complex numbers §0 as pairs of real numbers §1."
+msgstr ""
+
+#. §0: $z + \\bar{z} = 2 \\text{Re}(z)$
+#: Game.Levels.ComplexNumbers.L01_Basics
+msgid "The property that §0."
+msgstr ""
+
+#: Game.Levels.ComplexNumbers
+msgid "Complex Numbers"
+msgstr ""
+
+#: Game.Levels.ComplexNumbers.L01_Basics
+msgid "The imaginary part of a conjugate is the negative."
+msgstr ""
+
+#. §0: $ \\mathbb{C} $
+#: Game
+msgid "# Welcome to Complex Analysis\n"
+"\n"
+"This game will guide you through the foundations of Complex Analysis, based on the text by Howell & Mathews.\n"
+"\n"
+"You will learn about:\n"
+"- The structure of Complex Numbers (§0)\n"
+"- Geometric Interpretation\n"
+"- Analytic Functions\n"
+"- Integration"
+msgstr ""
+
+#. §0: `ComplexQuiz`
+#: Game.Levels.ComplexNumbers.L01_Basics
+msgid "§0 displays a multiple-choice question in the Infoview."
+msgstr ""
+
+#: Game.Levels.ComplexNumbers.L01_Basics
+msgid "The real part of a sum is the sum of real parts."
+msgstr ""
+
+#: Game
+msgid "Complex Analysis Game"
+msgstr ""
+
+#: Game.Levels.ComplexNumbers.L01_Basics
+msgid "The real part of a conjugate is the same."
+msgstr ""
+
+#. §0: $z$
+#. §1: $z + \\bar{z} = 2 \\cdot \\text{Re}(z)$
+#: Game.Levels.ComplexNumbers.L01_Basics
+msgid "Prove that for any complex number §0, §1."
+msgstr ""
+
+#. §0: `rw`
+#: Game.Levels.ComplexNumbers.L01_Basics
+msgid "§0 (rewrite) replaces subterms with equal ones."
+msgstr ""
+
+#: Game.Levels.ComplexNumbers.L01_Basics
+msgid "The imaginary part of a real number is zero."
+msgstr ""
+
+#: Game.Levels.ComplexNumbers.L01_Basics
+msgid "Real and Imaginary Parts"
+msgstr ""
