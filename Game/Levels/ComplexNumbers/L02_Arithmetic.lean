@@ -23,7 +23,7 @@ $$ (a + bi) \\cdot (c + di) = (ac - bd) + (ad + bc)i $$
 We also define the **modulus** (or absolute value) of $z = x + iy$ as:
 $$ |z| = \\sqrt{x^2 + y^2} $$
 
-In Lean, this is `Complex.abs z`.
+In Lean, we use the notation `|z|`.
 A key identity relating the conjugate and the modulus is:
 $$ z \\cdot \\bar{z} = |z|^2 $$
 "
@@ -57,7 +57,7 @@ We want to prove that $z \\cdot \\bar{z} = |z|^2$.
 Which theorem should we use?
 -/
 Statement (z : ℂ) : z * conj z = ↑(Complex.normSq z) := by
-  ComplexQuiz "Which theorem relates z * conj z to |z|^2?" ["Complex.add_conj", "Complex.mul_conj", "Complex.norm_sq"] 1
+  ComplexQuiz "Which theorem relates z * conj z to |z|^2?" ["Complex.add_conj", "Complex.mul_conj", "Complex.normSq"] 1
   rw [Complex.mul_conj]
 
 Conclusion "
