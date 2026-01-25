@@ -7,18 +7,25 @@ This document outlines the pedagogical approach for the game, strictly following
 2.  **Theorem Documentation**: Before asking the user to use a theorem, explicit `TheoremDoc` entries must be visible and explained.
 3.  **Scaffolded Exercises**: Exercises should start simple (confirming understanding of the definition) before moving to complex proofs.
 
-## Level Structure
 
-### Level 1: The Basics (Existing)
+## World 1: Complex Numbers
+Foundational arithmetic and geometry.
+
+### Level 1: The Basics
 *   See [Lecture 1 Plan](lectures/lecture_01_basics.md)
 
-### Level 2: Arithmetic & Modulus (Refined)
+### Level 2: Arithmetic & Modulus
 *   See [Lecture 2 Plan](lectures/lecture_02_arithmetic.md)
 
-### Level 3: The Complex Plane / Geometry (Planned)
-*   **Theory**: Polar form $z = re^{i\theta}$.
-*   **Visual**: Use `ComplexQuiz` to identify points in the plane.
-*   **Exercise**: Proving properties of the triangle inequality (if feasible) or simple argument properties.
+### Level 3: The Complex Plane
+*   See [Lecture 3 Plan](lectures/lecture_03_geometry.md)
+
+## World 2: Analysis
+Calculus on the complex plane.
+
+### Level 1: Analytic Functions
+*   **Theory**: Complex Differentiability & Cauchy-Riemann Equations.
+*   **Exercise**: Verifying CR equations for polynomial functions.
 
 ## Documentation Standards
 *   Use `Introduction` blocks for the "Lecture" portion.

@@ -48,9 +48,9 @@ NewTheorem Complex.add_conj Complex.add_re Complex.add_im Complex.conj_re Comple
 
 open Complex ComplexConjugate
 
-/--
-Prove that for any complex number $z$, $z + \bar{z} = 2 \cdot \text{Re}(z)$.
--/
+
+/-- The identity defining the real part via the conjugate. -/
+TheoremDoc BasicsIdentity as "BasicsIdentity" in "Complex"
 Statement BasicsIdentity (z : ℂ) : z + conj z = ↑(2 * z.re) := by
   ComplexQuiz "Quiz: What is the real part of 3 + 4i?" ["3", "4", "3 + 4i", "7"] 0
   rw [Complex.add_conj]

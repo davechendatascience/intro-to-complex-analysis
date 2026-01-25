@@ -1,4 +1,5 @@
 import Game.Levels.ComplexNumbers
+import Game.Levels.Analysis
 import GameServer.Commands
 
 -- Here's where we'll define the game title and structure

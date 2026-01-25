@@ -1,5 +1,8 @@
 import Game.Levels.ComplexNumbers.L01_Basics
 import Game.Levels.ComplexNumbers.L02_Modulus
+import Game.Levels.ComplexNumbers.L03_Geometry
+import Game.Levels.ComplexNumbers.L03_Geometry
+
 
 World "ComplexNumbers"
 Title "Complex Numbers"

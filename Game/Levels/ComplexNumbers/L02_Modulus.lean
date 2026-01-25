@@ -42,14 +42,16 @@ TacticDoc rw
 /-- The property that $z \\cdot \\bar{z} = |z|^2$ (lifted to $\\mathbb{C}$). -/
 TheoremDoc Complex.mul_conj as "mul_conj" in "Complex"
 
+/-- `Hint` provides a hint to the player. -/
+TacticDoc Hint
+/-- `ComplexQuiz` allows you to answer multiple choice questions. -/
+TacticDoc ComplexQuiz
+
 NewTactic simp ring rw ComplexQuiz Hint
 NewTheorem Complex.mul_conj
 
-/--
-# Arithmetic and Modulus Practice
-
-Let's start with a quick calculation and then prove a fundamental property.
--/
+/-- The property that $z \cdot \bar{z} = |z|^2$. -/
+TheoremDoc ModulusProperty as "ModulusProperty" in "Complex"
 Statement ModulusProperty (z : ℂ) : z * conj z = ↑(Complex.normSq z) := by
   ComplexQuiz "Warm-up: What is (1+i) + (1-i)?" ["2", "2i", "0", "1"] 0
   Hint "Now that you've got the arithmetic down, let's prove the property $z \\cdot \\bar{z} = |z|^2$."

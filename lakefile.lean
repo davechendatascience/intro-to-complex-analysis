@@ -2,7 +2,7 @@ import Lake
 open Lake DSL
 
 -- Use the Lean version (e.g. v4.23.0) to pin dependencies
-def leanVersion : String := s!"v{Lean.versionString}"
+def leanVersion : String := "v4.23.0"
 
 package Game where
   leanOptions := #[
@@ -16,6 +16,7 @@ package Game where
 -- Require dependencies at the same version tag
 require GameServer from git "https://github.com/leanprover-community/lean4game" @ leanVersion / "server"
 require mathlib from git "https://github.com/leanprover-community/mathlib4.git" @ leanVersion
+require REPL from git "https://github.com/leanprover-community/repl" @ "bump_to_v4.23.0"
 
 @[default_target]
 lean_lib Game where
