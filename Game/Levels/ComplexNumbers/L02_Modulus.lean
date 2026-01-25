@@ -6,7 +6,7 @@ import Game.Widgets.Quiz
 import ProofWidgets.Component.HtmlDisplay
 
 World "ComplexNumbers"
-Level ArithModulus
+Level 2
 Title "Arithmetic and Modulus"
 
 open Complex ComplexConjugate
@@ -42,26 +42,21 @@ TacticDoc rw
 /-- The property that $z \\cdot \\bar{z} = |z|^2$ (lifted to $\\mathbb{C}$). -/
 TheoremDoc Complex.mul_conj as "mul_conj" in "Complex"
 
-NewTactic simp ring rw ComplexQuiz
+NewTactic simp ring rw ComplexQuiz Hint
 NewTheorem Complex.mul_conj
 
 /--
-Let's practice some basic addition.
-Compute the sum of $(1 + i) + (1 - i)$.
--/
-Statement : (1 + Complex.I) + (1 - Complex.I) = 2 := by
-  ComplexQuiz "What is (1+i) + (1-i)?" ["2", "2i", "0", "1"] 0
-  ring
+# Arithmetic and Modulus Practice
 
-/--
-Now, let's look at the relationship between the conjugate and the modulus.
-We want to prove that $z \\cdot \\bar{z} = |z|^2$.
-Which theorem should we use?
+Let's start with a quick calculation and then prove a fundamental property.
 -/
-Statement (z : ℂ) : z * conj z = ↑(Complex.normSq z) := by
+Statement ModulusProperty (z : ℂ) : z * conj z = ↑(Complex.normSq z) := by
+  ComplexQuiz "Warm-up: What is (1+i) + (1-i)?" ["2", "2i", "0", "1"] 0
+  Hint "Now that you've got the arithmetic down, let's prove the property $z \\cdot \\bar{z} = |z|^2$."
   ComplexQuiz "Which theorem relates z * conj z to |z|^2?" ["Complex.add_conj", "Complex.mul_conj", "Complex.normSq"] 1
   rw [Complex.mul_conj]
 
 Conclusion "
 Excellent! You now understand how the modulus relates to the conjugate.
 "
+

@@ -8,32 +8,17 @@ msgstr "Project-Id-Version: Game v4.23.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit"
 
-#: GameServer.RpcHandlers
-msgid "level completed with warnings… 🎭"
+#. §0: `apply`
+#: Game.Levels.ComplexNumbers.L01_Basics
+msgid "§0 matches the goal against the conclusion of a theorem."
 msgstr ""
 
 #: GameServer.RpcHandlers
 msgid "level completed! 🎉"
 msgstr ""
 
-#. §0: `apply`
-#: Game.Levels.ComplexNumbers.L01_Basics
-msgid "§0 matches the goal against the conclusion of a theorem."
-msgstr ""
-
 #: Game.Levels.ComplexNumbers.L01_Basics
 msgid "The real part of a real number is itself."
-msgstr ""
-
-#. §0: `simp`
-#: Game.Levels.ComplexNumbers.L01_Basics
-msgid "§0 is a powerful tactic that simplifies goals using theorems."
-msgstr ""
-
-#. §0: `ring`
-#. §1: `a + b = b + a`
-#: Game.Levels.ComplexNumbers.L01_Basics
-msgid "§0 solves goals that follow from the axioms of a ring (like §1)."
 msgstr ""
 
 #: Game.Levels.ComplexNumbers.L01_Basics
@@ -44,12 +29,38 @@ msgstr ""
 msgid "intermediate goal solved! 🎉"
 msgstr ""
 
-#: Game
-msgid "Content adapted from 'Complex Analysis' by Howell & Mathews."
+#. §0: $i^2 = -1$
+#. §1: $$ (a + bi) + (c + di) = (a+c) + (b+d)i $$
+#. §2: $$ (a + bi) \\cdot (c + di) = (ac - bd) + (ad + bc)i $$
+#. §3: $z = x + iy$
+#. §4: $$ |z| = \\sqrt{x^2 + y^2} $$
+#. §5: `|z|`
+#. §6: $$ z \\cdot \\bar{z} = |z|^2 $$
+#: Game.Levels.ComplexNumbers.L02_Modulus
+msgid "# Arithmetic and Modulus\n"
+"\n"
+"We have seen how to define complex numbers. Now let's do some arithmetic.\n"
+"\n"
+"## Addition and Multiplication\n"
+"Addition and multiplication work just like you expect, using the distributive law and §0.\n"
+"§1\n"
+"§2\n"
+"\n"
+"## The Modulus\n"
+"We also define the **modulus** (or absolute value) of §3 as:\n"
+"§4\n"
+"\n"
+"In Lean, we use the notation §5.\n"
+"A key identity relating the conjugate and the modulus is:\n"
+"§6"
 msgstr ""
 
-#: Game.Levels.ComplexNumbers.L01_Basics
-msgid "Great job! You've verified a fundamental property of complex conjugates."
+#: Game.Levels.ComplexNumbers.L02_Modulus
+msgid "Excellent! You now understand how the modulus relates to the conjugate."
+msgstr ""
+
+#: Game
+msgid "Content adapted from 'Complex Analysis' by Howell & Mathews."
 msgstr ""
 
 #. §0: $z$
@@ -70,6 +81,65 @@ msgid "Every complex number §0 can be written as §1, where §2 and §3 are rea
 "In Lean, §8 is defined as a structure with two fields: §9 and §10."
 msgstr ""
 
+#: Game.Levels.ComplexNumbers.L02_Modulus
+msgid "# Arithmetic and Modulus Practice\n"
+"\n"
+"Let's start with a quick calculation and then prove a fundamental property."
+msgstr ""
+
+#: Game.Levels.ComplexNumbers.L01_Basics
+msgid "The imaginary part of a conjugate is the negative."
+msgstr ""
+
+#. §0: `ComplexQuiz`
+#: Game.Levels.ComplexNumbers.L01_Basics
+#: Game.Levels.ComplexNumbers.L02_Modulus
+msgid "§0 displays a multiple-choice question in the Infoview."
+msgstr ""
+
+#: Game.Levels.ComplexNumbers.L01_Basics
+msgid "The real part of a conjugate is the same."
+msgstr ""
+
+#. §0: $z$
+#. §1: $z + \\bar{z} = 2 \\cdot \\text{Re}(z)$
+#: Game.Levels.ComplexNumbers.L01_Basics
+msgid "Prove that for any complex number §0, §1."
+msgstr ""
+
+#: Game.Levels.ComplexNumbers.L01_Basics
+msgid "Real and Imaginary Parts"
+msgstr ""
+
+#: GameServer.RpcHandlers
+msgid "level completed with warnings… 🎭"
+msgstr ""
+
+#. §0: `ring`
+#. §1: `a + b = b + a`
+#: Game.Levels.ComplexNumbers.L01_Basics
+msgid "§0 solves goals that follow from the axioms of a ring (like §1)."
+msgstr ""
+
+#. §0: `simp`
+#: Game.Levels.ComplexNumbers.L01_Basics
+#: Game.Levels.ComplexNumbers.L02_Modulus
+msgid "§0 is a powerful tactic that simplifies goals using theorems."
+msgstr ""
+
+#: Game.Levels.ComplexNumbers.L02_Modulus
+msgid "Arithmetic and Modulus"
+msgstr ""
+
+#: Game.Levels.ComplexNumbers.L01_Basics
+msgid "Great job! You've verified a fundamental property of complex conjugates."
+msgstr ""
+
+#. §0: $z \\cdot \\bar«{z}» = |z|^2$
+#: Game.Levels.ComplexNumbers.L02_Modulus
+msgid "Now that you've got the arithmetic down, let's prove the property §0."
+msgstr ""
+
 #. §0: $\\mathbb{C}$
 #. §1: $(x, y)$
 #: Game.Levels.ComplexNumbers
@@ -86,10 +156,6 @@ msgstr ""
 msgid "Complex Numbers"
 msgstr ""
 
-#: Game.Levels.ComplexNumbers.L01_Basics
-msgid "The imaginary part of a conjugate is the negative."
-msgstr ""
-
 #. §0: $ \\mathbb{C} $
 #: Game
 msgid "# Welcome to Complex Analysis\n"
@@ -103,11 +169,6 @@ msgid "# Welcome to Complex Analysis\n"
 "- Integration"
 msgstr ""
 
-#. §0: `ComplexQuiz`
-#: Game.Levels.ComplexNumbers.L01_Basics
-msgid "§0 displays a multiple-choice question in the Infoview."
-msgstr ""
-
 #: Game.Levels.ComplexNumbers.L01_Basics
 msgid "The real part of a sum is the sum of real parts."
 msgstr ""
@@ -116,25 +177,23 @@ msgstr ""
 msgid "Complex Analysis Game"
 msgstr ""
 
-#: Game.Levels.ComplexNumbers.L01_Basics
-msgid "The real part of a conjugate is the same."
-msgstr ""
-
-#. §0: $z$
-#. §1: $z + \\bar{z} = 2 \\cdot \\text{Re}(z)$
-#: Game.Levels.ComplexNumbers.L01_Basics
-msgid "Prove that for any complex number §0, §1."
-msgstr ""
-
 #. §0: `rw`
 #: Game.Levels.ComplexNumbers.L01_Basics
+#: Game.Levels.ComplexNumbers.L02_Modulus
 msgid "§0 (rewrite) replaces subterms with equal ones."
+msgstr ""
+
+#. §0: `ring`
+#: Game.Levels.ComplexNumbers.L02_Modulus
+msgid "§0 can solve equations closer to a commutative ring."
 msgstr ""
 
 #: Game.Levels.ComplexNumbers.L01_Basics
 msgid "The imaginary part of a real number is zero."
 msgstr ""
 
-#: Game.Levels.ComplexNumbers.L01_Basics
-msgid "Real and Imaginary Parts"
+#. §0: $z \\cdot \\bar{z} = |z|^2$
+#. §1: $\\mathbb{C}$
+#: Game.Levels.ComplexNumbers.L02_Modulus
+msgid "The property that §0 (lifted to §1)."
 msgstr ""
