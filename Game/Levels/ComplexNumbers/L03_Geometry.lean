@@ -1,6 +1,7 @@
 import GameServer.Commands
 import Mathlib.Data.Complex.Basic
 import Mathlib.Analysis.Complex.Exponential
+import Mathlib.Analysis.SpecialFunctions.Complex.Arg
 import Game.Widgets.MultipleChoice
 import Game.Widgets.Quiz
 import ProofWidgets.Component.HtmlDisplay

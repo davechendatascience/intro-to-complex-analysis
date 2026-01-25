@@ -69,21 +69,29 @@ class LeanREPLManager:
 
             stdout = result.stdout
             
-            # The output contains "Building..." text mixed with JSON. 
-            # We look for the line starting with valid JSON structure.
-            for line in stdout.splitlines():
-                clean_line = line.strip()
-                if clean_line.startswith("{") and "messages" in clean_line:
-                    try:
-                        resp = json.loads(clean_line)
-                        return self._format_response(resp)
-                    except json.JSONDecodeError:
-                        continue
+            # Try to find valid JSON in the output (handling potential pretty-printing or noise)
+            try:
+                # First, try strict line-by-line (common case for tools)
+                for line in stdout.splitlines():
+                    if line.strip().startswith("{") and "messages" in line:
+                         return self._format_response(json.loads(line))
+            except:
+                pass
+
+            # Fallback: Try to parse the entire stdout (if pretty-printed)
+            try:
+                # Find the first brace
+                start = stdout.find("{")
+                if start != -1:
+                    potential_json = stdout[start:]
+                    return self._format_response(json.loads(potential_json))
+            except:
+                pass
             
             # If we fall through, look for general errors
             if result.stderr:
-                return f"❌ REPL Error (stderr):\n{result.stderr}"
-            return f"❌ No valid JSON response found. Raw output:\n{stdout[:500]}..."
+                return f"❌ REPL Error (stderr):\n{result.stderr}\n\nStdout:\n{stdout}"
+            return f"❌ No valid JSON response found. Raw output:\n{stdout}..."
 
         except subprocess.TimeoutExpired:
             return "❌ Timeout: REPL took longer than 120s."

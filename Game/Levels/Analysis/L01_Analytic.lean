@@ -57,8 +57,12 @@ Statement CR_Equation_Check (x y : ℝ) :
     deriv (fun x => x^2 - y^2) x = deriv (fun y => 2*x*y) y := by
   Hint "Compute the derivatives on both sides. `simp` can usually handle simple real derivatives."
   ComplexQuiz "Is the function f(z) = \\bar{z} analytic?" ["Yes", "No", "Only at z=0"] 1
-  simp [deriv_sub, deriv_add, deriv_mul, deriv_pow, deriv_const, deriv_id, deriv_const_mul, deriv_mul_const]
-  ring
+  ComplexQuiz "Is the function f(z) = \\bar{z} analytic?" ["Yes", "No", "Only at z=0"] 1
+  simp
+  rw [deriv_const_mul]
+  simp
+  exact differentiableAt_id
+
 
 Conclusion "
 Correct! You've verified that $\\frac{\\partial u}{\\partial x} = 2x$ and $\\frac{\\partial v}{\\partial y} = 2x$, so they are equal.

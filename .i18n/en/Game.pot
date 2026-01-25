@@ -1,32 +1,197 @@
 msgid ""
 msgstr "Project-Id-Version: Game v4.23.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-01-25\n"
+"POT-Creation-Date: 2026-01-26\n"
 "Last-Translator: \n"
 "Language-Team: none\n"
 "Language: en\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit"
 
-#. §0: `apply`
 #: Game.Levels.ComplexNumbers.L01_Basics
-msgid "§0 matches the goal against the conclusion of a theorem."
+msgid "The identity defining the real part via the conjugate."
+msgstr ""
+
+#. §0: $z = |z| * (\\cos (\\arg z) + i \\sin (\\arg z))$
+#: Game.Levels.ComplexNumbers.L03_Geometry
+msgid "The relation between algebraic and polar forms: §0."
+msgstr ""
+
+#: GameServer.RpcHandlers
+msgid "intermediate goal solved! 🎉"
+msgstr ""
+
+#: Game
+msgid "Content adapted from 'Complex Analysis' by Howell & Mathews."
+msgstr ""
+
+#. §0: $z$
+#. §1: $x + iy$
+#. §2: $x$
+#. §3: $y$
+#. §4: $x$
+#. §5: $\\text{Re}(z)$
+#. §6: $y$
+#. §7: $\\text{Im}(z)$
+#. §8: `Complex`
+#. §9: `re`
+#. §10: `im`
+#: Game.Levels.ComplexNumbers.L01_Basics
+msgid "Every complex number §0 can be written as §1, where §2 and §3 are real numbers.\n"
+"§4 is called the real part, denoted §5, and §6 is the imaginary part, denoted §7.\n"
+"\n"
+"In Lean, §8 is defined as a structure with two fields: §9 and §10."
+msgstr ""
+
+#: Game.Levels.Analysis.L01_Analytic
+msgid "Analytic Functions"
+msgstr ""
+
+#: Game.Levels.ComplexNumbers.L01_Basics
+msgid "The real part of a conjugate is the same."
+msgstr ""
+
+#: Game.Levels.Analysis
+msgid "# Analysis\n"
+"\n"
+"Now that we understand the algebra and geometry of complex numbers, we can begin to study **Calculus** on the complex plane.\n"
+"\n"
+"This world covers:\n"
+"1.  Analytic Functions (Differentiation)\n"
+"2.  Integration\n"
+"3.  Series Representations"
+msgstr ""
+
+#: GameServer.RpcHandlers
+msgid "level completed with warnings… 🎭"
+msgstr ""
+
+#. §0: `simp`
+#: Game.Levels.Analysis.L01_Analytic
+msgid "Compute the derivatives on both sides. §0 can usually handle simple real derivatives."
+msgstr ""
+
+#. §0: `Hint`
+#: Game.Levels.ComplexNumbers.L02_Modulus
+#: Game.Levels.ComplexNumbers.L03_Geometry
+msgid "§0 provides a hint to the player."
+msgstr ""
+
+#. §0: `simp`
+#: Game.Levels.ComplexNumbers.L01_Basics
+#: Game.Levels.ComplexNumbers.L02_Modulus
+#: Game.Levels.ComplexNumbers.L03_Geometry
+#: Game.Levels.Analysis.L01_Analytic
+msgid "§0 is a powerful tactic that simplifies goals using theorems."
+msgstr ""
+
+#. §0: `norm_num`
+#: Game.Levels.ComplexNumbers.L03_Geometry
+msgid "§0 is a tactic for solving numerical goals."
+msgstr ""
+
+#: Game.Levels.ComplexNumbers.L02_Modulus
+msgid "Arithmetic and Modulus"
+msgstr ""
+
+#. §0: $f(z)$
+#. §1: $f(z) = u(x,y) + i v(x,y)$
+#. §2: $$ \\frac{\\partial u}{\\partial x} = \\frac{\\partial v}{\\partial y} \\quad \\text{and} \\quad \\frac{\\partial u}{\\partial y} = -\\frac{\\partial v}{\\partial x} $$
+#. §3: $f(z) = z^2$
+#: Game.Levels.Analysis.L01_Analytic
+msgid "# Analytic Functions\n"
+"\n"
+"A complex function §0 is **analytic** (or holomorphic) if it has a complex derivative.\n"
+"This is a very strong condition! It implies that the real and imaginary parts of §1 must satisfy the **Cauchy-Riemann equations**:\n"
+"\n"
+"§2\n"
+"\n"
+"In this level, we will check these equations for the function §3."
+msgstr ""
+
+#: Game.Levels.ComplexNumbers.L01_Basics
+msgid "Great job! You've verified a fundamental property of complex conjugates."
+msgstr ""
+
+#: Game.Levels.ComplexNumbers.L03_Geometry
+msgid "# Geometry Quiz & Proof\n"
+"\n"
+"First, let's check your understanding of the complex plane."
+msgstr ""
+
+#: Game.Levels.ComplexNumbers.L01_Basics
+msgid "The real part of a sum is the sum of real parts."
+msgstr ""
+
+#. §0: `dsimp`
+#: Game.Levels.Analysis.L01_Analytic
+msgid "§0 (definitional simplification) simplifies terms by expanding definitions."
+msgstr ""
+
+#. §0: `ring`
+#: Game.Levels.ComplexNumbers.L02_Modulus
+#: Game.Levels.ComplexNumbers.L03_Geometry
+#: Game.Levels.Analysis.L01_Analytic
+msgid "§0 can solve equations closer to a commutative ring."
+msgstr ""
+
+#. §0: `hint`
+#: Game.Levels.Analysis.L01_Analytic
+msgid "§0 gives you a hint."
+msgstr ""
+
+#: Game.Levels.ComplexNumbers.L01_Basics
+msgid "The imaginary part of a real number is zero."
+msgstr ""
+
+#. §0: $z = x + iy$
+#. §1: $(x, y)$
+#. §2: $r = |z|$
+#. §3: $\\theta = \\arg(z)$
+#. §4: $$ z = |z| (\\cos \\theta + i \\sin \\theta) $$
+#: Game.Levels.ComplexNumbers.L03_Geometry
+msgid "# The Complex Plane\n"
+"\n"
+"We can visualize a complex number §0 as a point §1 in a 2D plane, known as the **Argand Plane**.\n"
+"- The horizontal axis is the **Real Axis**.\n"
+"- The vertical axis is the **Imaginary Axis**.\n"
+"\n"
+"In this way, complex numbers behave like 2D vectors. Addition of complex numbers is just vector addition!\n"
+"\n"
+"## Polar Form\n"
+"\n"
+"We can also describe a point by its distance from the origin §2 and its angle §3.\n"
+"This leads to the **polar form**:\n"
+"§4"
 msgstr ""
 
 #: GameServer.RpcHandlers
 msgid "level completed! 🎉"
 msgstr ""
 
+#. §0: `apply`
+#: Game.Levels.ComplexNumbers.L01_Basics
+msgid "§0 matches the goal against the conclusion of a theorem."
+msgstr ""
+
 #: Game.Levels.ComplexNumbers.L01_Basics
 msgid "The real part of a real number is itself."
+msgstr ""
+
+#. §0: $i$
+#: Game.Levels.ComplexNumbers.L03_Geometry
+msgid "Think about where the number §0 is located."
 msgstr ""
 
 #: Game.Levels.ComplexNumbers.L01_Basics
 msgid "The imaginary part of a sum is the sum of imaginary parts."
 msgstr ""
 
-#: GameServer.RpcHandlers
-msgid "intermediate goal solved! 🎉"
+#. §0: `ComplexQuiz`
+#: Game.Levels.ComplexNumbers.L02_Modulus
+#: Game.Levels.ComplexNumbers.L03_Geometry
+#: Game.Levels.Analysis.L01_Analytic
+msgid "§0 allows you to answer multiple choice questions."
 msgstr ""
 
 #. §0: $i^2 = -1$
@@ -59,32 +224,15 @@ msgstr ""
 msgid "Excellent! You now understand how the modulus relates to the conjugate."
 msgstr ""
 
-#: Game
-msgid "Content adapted from 'Complex Analysis' by Howell & Mathews."
+#. §0: $x, y$
+#. §1: $r, \\theta$
+#: Game.Levels.ComplexNumbers.L03_Geometry
+msgid "Correct! You've established the link between the Cartesian (§0) and Polar (§1) forms."
 msgstr ""
 
-#. §0: $z$
-#. §1: $x + iy$
-#. §2: $x$
-#. §3: $y$
-#. §4: $x$
-#. §5: $\\text{Re}(z)$
-#. §6: $y$
-#. §7: $\\text{Im}(z)$
-#. §8: `Complex`
-#. §9: `re`
-#. §10: `im`
-#: Game.Levels.ComplexNumbers.L01_Basics
-msgid "Every complex number §0 can be written as §1, where §2 and §3 are real numbers.\n"
-"§4 is called the real part, denoted §5, and §6 is the imaginary part, denoted §7.\n"
-"\n"
-"In Lean, §8 is defined as a structure with two fields: §9 and §10."
-msgstr ""
-
-#: Game.Levels.ComplexNumbers.L02_Modulus
-msgid "# Arithmetic and Modulus Practice\n"
-"\n"
-"Let's start with a quick calculation and then prove a fundamental property."
+#. §0: $\\pi > 0$
+#: Game.Levels.ComplexNumbers.L03_Geometry
+msgid "§0"
 msgstr ""
 
 #: Game.Levels.ComplexNumbers.L01_Basics
@@ -97,22 +245,12 @@ msgstr ""
 msgid "§0 displays a multiple-choice question in the Infoview."
 msgstr ""
 
-#: Game.Levels.ComplexNumbers.L01_Basics
-msgid "The real part of a conjugate is the same."
-msgstr ""
-
-#. §0: $z$
-#. §1: $z + \\bar{z} = 2 \\cdot \\text{Re}(z)$
-#: Game.Levels.ComplexNumbers.L01_Basics
-msgid "Prove that for any complex number §0, §1."
+#: Game.Levels.ComplexNumbers.L03_Geometry
+msgid "The Complex Plane"
 msgstr ""
 
 #: Game.Levels.ComplexNumbers.L01_Basics
 msgid "Real and Imaginary Parts"
-msgstr ""
-
-#: GameServer.RpcHandlers
-msgid "level completed with warnings… 🎭"
 msgstr ""
 
 #. §0: `ring`
@@ -121,23 +259,19 @@ msgstr ""
 msgid "§0 solves goals that follow from the axioms of a ring (like §1)."
 msgstr ""
 
-#. §0: `simp`
-#: Game.Levels.ComplexNumbers.L01_Basics
-#: Game.Levels.ComplexNumbers.L02_Modulus
-msgid "§0 is a powerful tactic that simplifies goals using theorems."
-msgstr ""
-
-#: Game.Levels.ComplexNumbers.L02_Modulus
-msgid "Arithmetic and Modulus"
-msgstr ""
-
-#: Game.Levels.ComplexNumbers.L01_Basics
-msgid "Great job! You've verified a fundamental property of complex conjugates."
+#: Game.Levels.ComplexNumbers.L03_Geometry
+msgid "Now, let's confirm the polar decomposition formula. Mathlib has a build-in theorem for this!"
 msgstr ""
 
 #. §0: $z \\cdot \\bar«{z}» = |z|^2$
 #: Game.Levels.ComplexNumbers.L02_Modulus
 msgid "Now that you've got the arithmetic down, let's prove the property §0."
+msgstr ""
+
+#. §0: $z + \\bar{z} = 2 \\text{Re}(z)$
+#: Game.Levels.ComplexNumbers.L01_Basics
+#: Game.Levels.ComplexNumbers.L02_Modulus
+msgid "The property that §0."
 msgstr ""
 
 #. §0: $\\mathbb{C}$
@@ -147,13 +281,21 @@ msgid "In this world, we will explore the basic properties of complex numbers.\n
 "We define the set of complex numbers §0 as pairs of real numbers §1."
 msgstr ""
 
-#. §0: $z + \\bar{z} = 2 \\text{Re}(z)$
-#: Game.Levels.ComplexNumbers.L01_Basics
-msgid "The property that §0."
-msgstr ""
-
 #: Game.Levels.ComplexNumbers
 msgid "Complex Numbers"
+msgstr ""
+
+#. §0: $f(z) = z^2$
+#. §1: $f(x+iy) = (x^2 - y^2) + i(2xy)$
+#. §2: $\\frac{\\partial u}{\\partial x} = \\frac{\\partial v}{\\partial y}$
+#. §3: $u(x,y) = x^2 - y^2$
+#. §4: $v(x,y) = 2xy$
+#: Game.Levels.Analysis.L01_Analytic
+msgid "# Cauchy-Riemann Check\n"
+"Let §0. We can write §1.\n"
+"Let's verify the first Cauchy-Riemann equation: §2.\n"
+"\n"
+"Here, §3 and §4."
 msgstr ""
 
 #. §0: $ \\mathbb{C} $
@@ -169,10 +311,6 @@ msgid "# Welcome to Complex Analysis\n"
 "- Integration"
 msgstr ""
 
-#: Game.Levels.ComplexNumbers.L01_Basics
-msgid "The real part of a sum is the sum of real parts."
-msgstr ""
-
 #: Game
 msgid "Complex Analysis Game"
 msgstr ""
@@ -180,16 +318,19 @@ msgstr ""
 #. §0: `rw`
 #: Game.Levels.ComplexNumbers.L01_Basics
 #: Game.Levels.ComplexNumbers.L02_Modulus
+#: Game.Levels.ComplexNumbers.L03_Geometry
+#: Game.Levels.Analysis.L01_Analytic
 msgid "§0 (rewrite) replaces subterms with equal ones."
 msgstr ""
 
-#. §0: `ring`
-#: Game.Levels.ComplexNumbers.L02_Modulus
-msgid "§0 can solve equations closer to a commutative ring."
+#. §0: $\\frac{\\partial u}{\\partial x} = 2x$
+#. §1: $\\frac{\\partial v}{\\partial y} = 2x$
+#: Game.Levels.Analysis.L01_Analytic
+msgid "Correct! You've verified that §0 and §1, so they are equal."
 msgstr ""
 
-#: Game.Levels.ComplexNumbers.L01_Basics
-msgid "The imaginary part of a real number is zero."
+#: Game.Levels.Analysis
+msgid "Analysis"
 msgstr ""
 
 #. §0: $z \\cdot \\bar{z} = |z|^2$
