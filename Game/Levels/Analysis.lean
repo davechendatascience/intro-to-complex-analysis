@@ -1,4 +1,6 @@
 import Game.Levels.Analysis.L01_Analytic
+import Game.Levels.Analysis.L02_Integration
+
 
 World "Analysis"
 Title "Analysis"

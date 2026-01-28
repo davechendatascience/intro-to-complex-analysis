@@ -1,7 +1,7 @@
 msgid ""
 msgstr "Project-Id-Version: Game v4.23.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-01-26\n"
+"POT-Creation-Date: 2026-01-29\n"
 "Last-Translator: \n"
 "Language-Team: none\n"
 "Language: en\n"
@@ -19,6 +19,10 @@ msgstr ""
 
 #: GameServer.RpcHandlers
 msgid "intermediate goal solved! 🎉"
+msgstr ""
+
+#: Game.Levels.Analysis.L02_Integration
+msgid "This is a direct consequence of the Cauchy-Goursat theorem, or simply the integral of a constant."
 msgstr ""
 
 #: Game
@@ -47,8 +51,22 @@ msgstr ""
 msgid "Analytic Functions"
 msgstr ""
 
+#. §0: $z^n$
+#. §1: $n \\neq -1$
+#: Game.Levels.Analysis.L02_Integration
+msgid "The integral of §0 over a circle around 0 is 0 if §1."
+msgstr ""
+
 #: Game.Levels.ComplexNumbers.L01_Basics
 msgid "The real part of a conjugate is the same."
+msgstr ""
+
+#. §0: `circleIntegral f c R`
+#. §1: `f`
+#. §2: `c`
+#. §3: `R`
+#: Game.Levels.Analysis.L02_Integration
+msgid "§0 is the integral of §1 over the circle with center §2 and radius §3."
 msgstr ""
 
 #: Game.Levels.Analysis
@@ -60,6 +78,10 @@ msgid "# Analysis\n"
 "1.  Analytic Functions (Differentiation)\n"
 "2.  Integration\n"
 "3.  Series Representations"
+msgstr ""
+
+#: Game.Levels.Analysis.L02_Integration
+msgid "Answer: \\\\\"2πi\\\\\""
 msgstr ""
 
 #: GameServer.RpcHandlers
@@ -90,6 +112,14 @@ msgstr ""
 msgid "§0 is a tactic for solving numerical goals."
 msgstr ""
 
+#. §0: $1$
+#. §1: $0$
+#. §2: $1/z$
+#. §3: $2\\pi i$
+#: Game.Levels.Analysis.L02_Integration
+msgid "Excellent! You've seen that the integral of §0 is §1, but the integral of §2 captures the \"hole\" at the origin, giving §3."
+msgstr ""
+
 #: Game.Levels.ComplexNumbers.L02_Modulus
 msgid "Arithmetic and Modulus"
 msgstr ""
@@ -117,6 +147,11 @@ msgstr ""
 msgid "# Geometry Quiz & Proof\n"
 "\n"
 "First, let's check your understanding of the complex plane."
+msgstr ""
+
+#. §0: `circleIntegral.integral_sub_inv_smul_of_differentiable_on_off_countable`
+#: Game.Levels.Analysis.L02_Integration
+msgid "Look at §0."
 msgstr ""
 
 #: Game.Levels.ComplexNumbers.L01_Basics
@@ -220,6 +255,10 @@ msgid "# Arithmetic and Modulus\n"
 "§6"
 msgstr ""
 
+#: Game.Levels.Analysis.L02_Integration
+msgid "**Cauchy-Goursat Theorem**: The integral of a function differentiable on a disk is 0."
+msgstr ""
+
 #: Game.Levels.ComplexNumbers.L02_Modulus
 msgid "Excellent! You now understand how the modulus relates to the conjugate."
 msgstr ""
@@ -230,13 +269,29 @@ msgstr ""
 msgid "Correct! You've established the link between the Cartesian (§0) and Polar (§1) forms."
 msgstr ""
 
+#: Game.Levels.Analysis.L02_Integration
+msgid "Answer: \\\\\"0\\\\\""
+msgstr ""
+
 #. §0: $\\pi > 0$
 #: Game.Levels.ComplexNumbers.L03_Geometry
 msgid "§0"
 msgstr ""
 
+#. §0: $1/(z-c)$
+#. §1: $c$
+#. §2: $2\\pi i$
+#: Game.Levels.Analysis.L02_Integration
+msgid "**Cauchy's Integral Formula**: The integral of §0 over a circle around §1 is §2."
+msgstr ""
+
 #: Game.Levels.ComplexNumbers.L01_Basics
 msgid "The imaginary part of a conjugate is the negative."
+msgstr ""
+
+#. §0: `simp`
+#: Game.Levels.Analysis.L02_Integration
+msgid "Try §0 or look for a theorem about constant integrals."
 msgstr ""
 
 #. §0: `ComplexQuiz`
@@ -249,6 +304,23 @@ msgstr ""
 msgid "The Complex Plane"
 msgstr ""
 
+#. §0: $[a, b]$
+#. §1: $f(z)$
+#. §2: $R$
+#. §3: $c$
+#. §4: $$ \\oint_{|z-c|=R} f(z) \\, dz $$
+#: Game.Levels.Analysis.L02_Integration
+msgid "# Complex Integration\n"
+"\n"
+"In real calculus, we integrate over intervals §0. In complex analysis, we integrate over **curves** (paths) in the complex plane.\n"
+"\n"
+"One of the most important paths is the circle. We denote the integral of a function §1 over a circle of radius §2 centered at §3 as:\n"
+"\n"
+"§4\n"
+"\n"
+"In this level, we will explore the **Cauchy-Goursat Theorem** and **Cauchy's Integral Formula**."
+msgstr ""
+
 #: Game.Levels.ComplexNumbers.L01_Basics
 msgid "Real and Imaginary Parts"
 msgstr ""
@@ -257,6 +329,10 @@ msgstr ""
 #. §1: `a + b = b + a`
 #: Game.Levels.ComplexNumbers.L01_Basics
 msgid "§0 solves goals that follow from the axioms of a ring (like §1)."
+msgstr ""
+
+#: Game.Levels.Analysis.L02_Integration
+msgid "Integration"
 msgstr ""
 
 #: Game.Levels.ComplexNumbers.L03_Geometry
@@ -331,6 +407,10 @@ msgstr ""
 
 #: Game.Levels.Analysis
 msgid "Analysis"
+msgstr ""
+
+#: Game.Levels.Analysis.L02_Integration
+msgid "This is the fundamental integral in complex analysis."
 msgstr ""
 
 #. §0: $z \\cdot \\bar{z} = |z|^2$

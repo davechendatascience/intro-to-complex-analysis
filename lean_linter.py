@@ -46,7 +46,7 @@ class LeanREPLManager:
         if not self.project_root:
             return "❌ Project root not found. Run ensure_started first."
 
-        json_input = json.dumps(cmd_payload)
+        json_input = json.dumps(cmd_payload) + "\n"
         sys.stderr.write(f"[Debug] Running REPL in {self.project_root}...\n")
 
         try:
